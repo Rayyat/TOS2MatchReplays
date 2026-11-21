@@ -1,0 +1,7 @@
+# SML
+libs/
+obj/
+bin/
+Microsoft/
+System/
+/.vs

@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MatchReplaysPlus</RootNamespace>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>MatchReplays</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+
+    <Reference Include="Assembly-CSharp">
+      <HintPath>.\libs\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="0Harmony">
+      <HintPath>.\libs\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="BetterTOS2">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Town of Salem 2\SalemModLoader\Mods\BetterTOS2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+
+    <Reference Include="LiteNetLib">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Town of Salem 2\TownOfSalem2_Data\Managed\LiteNetLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+
+    <Reference Include="SalemModLoader">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Town of Salem 2\BepInEx\plugins\SalemModLoader.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Town of Salem 2\TownOfSalem2_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Town of Salem 2\TownOfSalem2_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Town of Salem 2\TownOfSalem2_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Town of Salem 2\TownOfSalem2_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.Replays" />
+    <EmbeddedResource Include="Resources.Replays_mac" />
+    <EmbeddedResource Include="Resources\modinfo.json" />
+    <EmbeddedResource Include="Resources\Thumbnail.png" />
+  </ItemGroup>
+
+
+</Project>
