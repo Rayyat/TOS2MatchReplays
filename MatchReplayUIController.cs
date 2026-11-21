@@ -312,7 +312,7 @@ namespace MatchReplaysPlus
             string gameTypeKey = gameType switch
             {
                 GameType.Custom => "Custom",
-                GameType.Ranked => "RoleCard_Starspawn",
+                (GameType)100 => "RoleCard_Starspawn", // BTOS2 CASUAL QUEUE
                 _ => "Unknown"
             };
 
